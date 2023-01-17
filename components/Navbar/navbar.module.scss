@@ -1,0 +1,67 @@
+.wrapper {
+  width: 100%;
+  height: 5%;
+  border-bottom: 2px solid #303030;
+
+  .navWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #7dbc83;
+    font-family: "Cabin", sans-serif;
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    .active {
+      border-bottom: 2px solid #c048db;
+      background-color: #645c8b45;
+    }
+    .navItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 10vw;
+
+      border-right: 2px solid #303030;
+
+      &:hover {
+        background-color: #645c8b45;
+      }
+
+      .navIcon {
+        margin-right: 1vw;
+      }
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 10vw;
+
+      border-right: 2px solid #303030;
+    }
+
+    .navItemContacts {
+      .link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      &:hover {
+        background-color: #645c8b45;
+      }
+      height: 100%;
+      width: 10vw;
+      margin-left: auto;
+
+      border-left: 2px solid #303030;
+      .navIcon {
+        margin-right: 1vw;
+      }
+    }
+  }
+}
