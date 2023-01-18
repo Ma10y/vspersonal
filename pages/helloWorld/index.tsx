@@ -15,7 +15,7 @@ const helloWorld = () => {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  '<span><span class="variable">const</span><span class="vName"> name</span> =<span class="vValue"> "Nikita"</span><span></span></span><br></br><span><span class="func">while</span><span class="func">(</span><span>true</span><span class="func">)</span><br></br><span class="func">{</span><br></br><span class="vName"><span> ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎</span>coding</span><span class="func">()</span><br></br><span class="func">}</span> </span><br></br><span><span class="variable">let</span><span class="vName"> status</span> =<span class="vValue"> "Looking for job"</span><span></span></span>'
+                  '<span><span class="variable">const</span><span class="vName"> name</span> =<span class="vValue"> "Nikita"</span><span></span></span><br></br><br></br><span><span class="variable">let</span><span class="vName"> status</span> =<span class="vValue"> "Looking for job"</span><span></span></span>'
                 )
                 .start()
                 .callFunction(() => {
@@ -67,7 +67,7 @@ const helloWorld = () => {
             onInit={(typewriter) => {
               typewriter
 
-                .pauseFor(6500)
+                .pauseFor(4500)
                 .typeString(
                   '<span><span class="variable">let</span><span class="vName"> gitHub</span> =<a href="https://github.com/Ma10y"><span class="vValue"> "https://github.com/Ma10y"</span></a><br></br><span></span></span><span><span class="variable">let</span><span class="vName"> linkedIn</span> =<a href="https://www.linkedin.com/in/ma10y/"><span class="vValue">"https://www.linkedin.com/in/ma10y/"</span></a><span></span></span>'
                 )
