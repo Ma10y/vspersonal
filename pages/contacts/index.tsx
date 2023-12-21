@@ -10,6 +10,7 @@ const Contacts = () => {
       <form className={styles.inputs}>
         <label htmlFor="name">_name:</label>
         <textarea
+          spellcheck="false"
           maxLength={50}
           rows={2}
           cols={2}
@@ -21,6 +22,7 @@ const Contacts = () => {
         ></textarea>
         <label htmlFor="email">_email:</label>
         <textarea
+          spellcheck="false"
           maxLength={50}
           rows={2}
           cols={2}
@@ -33,6 +35,7 @@ const Contacts = () => {
         <label htmlFor="message">_message:</label>
 
         <textarea
+          spellcheck="false"
           maxLength={400}
           name="reply"
           onChange={(e) => {

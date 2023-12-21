@@ -12,7 +12,17 @@ body {
   cursor: pointer;
   max-width: 100vw;
   overflow-x: hidden;
-  
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: 0px;
+ 
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0px;
+  }
 
   
   
