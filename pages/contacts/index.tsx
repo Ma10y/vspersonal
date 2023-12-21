@@ -14,10 +14,9 @@ const Contacts = () => {
       {state ? (
         <div className={styles.thanksWrapper}>
           <h1>Thank you!🤘</h1>
-          <span>
-            Your message has been accepted. <br></br>You will recieve answer
-            really soon!
-          </span>
+          <span>Your message has been accepted. </span>
+          <span>You will recieve answer really soon!</span>
+
           <button
             onClick={() => {
               setState(0);
