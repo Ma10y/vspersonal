@@ -5,7 +5,7 @@ const Contacts = () => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [mess, setMess] = React.useState("");
-  const [state, setState] = React.useState(1);
+  const [state, setState] = React.useState(0);
   function change() {
     setState(0);
   }
