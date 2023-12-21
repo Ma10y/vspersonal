@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className={styles.wrapper}>
       <div className={styles.navWrapper}>
         <div className={styles.logo}>
-          <span>root@Ma10y:~/Home</span>
+          <span>root@Ma10y:</span>
         </div>
 
         <div
