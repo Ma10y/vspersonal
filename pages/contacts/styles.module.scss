@@ -9,9 +9,10 @@
   font-family: "Cabin", sans-serif;
   font-family: "Fira Code", monospace;
   font-weight: 500;
-  padding-left: 10vw;
+  // padding-left: 10vw;
 
   .inputs {
+    margin-left: 10vw;
     width: 50%;
     display: flex;
     flex-direction: column;
