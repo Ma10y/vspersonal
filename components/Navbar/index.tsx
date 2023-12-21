@@ -1,9 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import styles from "./navbar.module.scss";
-import { SiTypescript, SiReact, SiSass } from "react-icons/si";
-import { IoLogoSass } from "react-icons/io";
-import { FaFolder } from "react-icons/fa";
+
 import { DiTerminal } from "react-icons/di";
 
 const Navbar = () => {
@@ -28,11 +26,6 @@ const Navbar = () => {
                 : styles.navItem
             }
           >
-            <SiReact
-              className={styles.navIcon}
-              color="#00D1F2"
-              size="20px"
-            ></SiReact>
             <span>__Hello_World</span>
           </div>
         </div>
@@ -47,11 +40,6 @@ const Navbar = () => {
                 : styles.navItem
             }
           >
-            <IoLogoSass
-              className={styles.navIcon}
-              color="#C36291"
-              size="25px"
-            ></IoLogoSass>
             <span>__About_Me</span>
           </div>
         </div>
@@ -68,11 +56,6 @@ const Navbar = () => {
                 : styles.navItem
             }
           >
-            <FaFolder
-              className={styles.navIcon}
-              color="#FFCA28"
-              size="20px"
-            ></FaFolder>
             <span>__Projects</span>
           </div>
         </div>

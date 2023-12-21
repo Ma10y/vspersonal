@@ -2,13 +2,33 @@
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
+
   align-self: center;
   color: #7dbc83;
   font-family: "Cabin", sans-serif;
   font-family: "Fira Code", monospace;
   font-weight: 100;
   font-size: 3vh;
+
+  .sidePanel {
+    display: flex;
+    flex-direction: column;
+
+    width: 11%;
+    border-right: 1px solid;
+
+    .sWrapper {
+      height: 2rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
 
   .infoCon {
     margin-left: 5vw;

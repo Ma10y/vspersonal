@@ -122,7 +122,6 @@ const Game = () => {
                 alt="card front"
                 //@ts-ignore
                 src={card.skill.src}
-                onClick={() => console.log(card)}
               ></Image>
             </div>
           ))}
