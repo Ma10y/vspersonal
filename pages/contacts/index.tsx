@@ -5,50 +5,77 @@ const Contacts = () => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [mess, setMess] = React.useState("");
+  const [state, setState] = React.useState(1);
+  function change() {
+    setState(0);
+  }
   return (
     <div className={styles.wrapper}>
-      <form className={styles.inputs}>
-        <label htmlFor="name">_name:</label>
-        <textarea
+      {state ? (
+        <div className={styles.thanksWrapper}>
+          <h1>Thank you!🤘</h1>
+          <span>
+            Your message has been accepted. <br></br>You will recieve answer
+            really soon!
+          </span>
+          <button onClick={() => setState(0)}>send-new-message</button>
+        </div>
+      ) : (
+        <form onSubmit={() => setState(1)} className={styles.inputs}>
+          <label htmlFor="name">_name:</label>
+          {/* <textarea
           spellCheck={false}
           maxLength={50}
-          rows={2}
-          cols={2}
           id="name "
           placeholder=""
           onChange={(e) => {
             setName(e.target.value);
           }}
-        ></textarea>
-        <label htmlFor="email">_email:</label>
-        <textarea
+        ></textarea> */}
+          <input
+            required={true}
+            spellCheck={"false"}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            id="name"
+            type={"text"}
+          />
+          <label htmlFor="email">_email:</label>
+          {/* <textarea
           spellCheck={false}
           maxLength={50}
-          rows={2}
-          cols={2}
           onChange={(e) => {
             setEmail(e.target.value);
           }}
           id="email"
           placeholder=""
-        ></textarea>
-        <label htmlFor="message">_message:</label>
+        ></textarea> */}
+          <input
+            required={true}
+            spellCheck={"false"}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            id="email"
+            type={"email"}
+          />
+          <label htmlFor="message">_message:</label>
 
-        <textarea
-          spellCheck={false}
-          maxLength={400}
-          name="reply"
-          onChange={(e) => {
-            setMess(e.target.value);
-          }}
-          id="message"
-          className={styles.bigInput}
-          placeholder=""
-          rows={2}
-          cols={2}
-        ></textarea>
-        <input type="submit" value="submit-message" />
-      </form>
+          <textarea
+            required={true}
+            spellCheck={false}
+            maxLength={400}
+            onChange={(e) => {
+              setMess(e.target.value);
+            }}
+            id="message"
+            className={styles.bigInput}
+            placeholder=""
+          ></textarea>
+          <input type="submit" value="submit-message" />
+        </form>
+      )}
 
       <div className={styles.codeWrapper}>
         <div className={styles.code}>
@@ -58,10 +85,13 @@ const Contacts = () => {
             <span>{"{ "}</span>
             <br></br>
             <span className="vValue">
-              <span className="vName">name:</span> "{name}",<br></br>
-              <span className="vName">email:</span> "{email}",<br></br>
-              <span className="vName">message:</span> "{mess}",<br></br>
-              <span className="vName">date:</span> "
+              <span className="vName"> {"\xa0\xa0 name:"}</span> "{name}",
+              <br></br>
+              <span className="vName"> {"\xa0\xa0 email:"}</span> "{email}",
+              <br></br>
+              <span className="vName"> {"\xa0\xa0 message:"}</span> "{mess}",
+              <br></br>
+              <span className="vName"> {"\xa0\xa0 date:"}</span> "
               {date.getDate() +
                 "/" +
                 date.getMonth() +

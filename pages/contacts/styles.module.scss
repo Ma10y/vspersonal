@@ -10,16 +10,45 @@
   font-family: "Fira Code", monospace;
   font-weight: 500;
   // padding-left: 10vw;
+  input[type="submit"],
+  button {
+    height: 40px;
+    width: 150px;
+    background-color: #645c8b45;
+    color: #6b8b6e;
+    font-family: "Cabin", sans-serif;
+    font-family: "Fira Code", monospace;
+    border: none;
+    border-radius: 7px;
+  }
 
-  .inputs {
-    margin-left: 10vw;
+  .thanksWrapper {
+    border-right: 2px solid #303030;
+
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+      color: rgb(170, 219, 159);
+    }
+  }
+
+  .inputs {
+    border-right: 2px solid #303030;
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 
-    textarea {
+    textarea,
+    input {
       resize: none;
       word-wrap: break-word;
       word-break: break-all;
@@ -38,17 +67,6 @@
 
     .bigInput {
       height: 145px;
-    }
-
-    input[type="submit"] {
-      height: 40px;
-      width: 150px;
-      background-color: #645c8b45;
-      color: #6b8b6e;
-      font-family: "Cabin", sans-serif;
-      font-family: "Fira Code", monospace;
-      border: none;
-      border-radius: 7px;
     }
   }
   .codeWrapper {
@@ -79,10 +97,13 @@
       hyphens: auto;
 
       max-width: 550px;
-      background: rgba(31, 26, 31, 0.75);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4.5px);
-      -webkit-backdrop-filter: blur(4.5px);
+      /* From https://css.glass */
+      background: rgba(37, 29, 51, 0.86);
+      border-radius: 16px;
+      box-shadow: 4px 4px 4px 4px rgba(1, 0.1, 0.1, 0.1);
+      backdrop-filter: blur(6.3px);
+      -webkit-backdrop-filter: blur(6.3px);
+      border: 1px solid rgba(37, 29, 51, 0.43);
       border-radius: 10px;
       gap: 50px;
       display: flex;
