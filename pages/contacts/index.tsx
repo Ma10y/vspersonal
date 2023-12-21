@@ -18,7 +18,16 @@ const Contacts = () => {
             Your message has been accepted. <br></br>You will recieve answer
             really soon!
           </span>
-          <button onClick={() => setState(0)}>send-new-message</button>
+          <button
+            onClick={() => {
+              setState(0);
+              setName("");
+              setEmail("");
+              setMess("");
+            }}
+          >
+            send-new-message
+          </button>
         </div>
       ) : (
         <form onSubmit={() => setState(1)} className={styles.inputs}>
